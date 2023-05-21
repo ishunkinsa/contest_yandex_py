@@ -3,14 +3,14 @@
 отличаются ли они только порядком следования символов."""
 import sys 
 
-def Anogram_check(s1,s2):
+def anogram_check(s1,s2):
     if sorted(s1) == sorted(s2):
         return True
     return False
 
 s1 = sys.stdin.readline().strip()
 s2 = sys.stdin.readline().strip()
-if Anogram_check(s1,s2):
+if anogram_check(s1,s2):
     print(1)
 else:
     print (0)
